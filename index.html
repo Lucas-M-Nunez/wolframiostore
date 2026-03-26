@@ -2,74 +2,159 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Academia Wolframio | Laboratorio Tecnológico</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia Wolframio | Propuesta Tecnológica</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=Inter:wght@300;400;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <nav>
-            <div class="logo"><strong>WOLFRAMIO</strong> STORE</div>
-            <div class="nav-links">
-                <a href="index.html">Inicio</a>
-                <a href="cursos.html">Cursos</a>
-                <a href="impresion3d.html">Impresión 3D</a>
-                <a href="#" class="btn-primary">Área Alumnos</a>
-            </div>
-        </nav>
 
-        <header class="hero" style="text-align: center; padding: 100px 0;">
-            <h1 style="font-size: 3.5rem; margin-bottom: 20px;">Forjando el futuro del <span style="color: var(--accent-primary);">talento técnico</span></h1>
-            <p style="color: var(--text-dim); max-width: 600px; margin: 0 auto 30px;">Cursos de programación, materiales de ingeniería y prototipado en 3D bajo un mismo techo digital.</p>
-            <div class="cta-group">
-                <a href="cursos.html" class="btn-primary">Explorar Cursos</a>
-                <a href="impresion3d.html" style="color: white; margin-left: 20px;">Ver Catálogo 3D →</a>
-            </div>
-        </header>
+    <div class="glow-bg top-left"></div>
+    <div class="glow-bg bottom-right"></div>
 
-        <section class="featured">
-            <h2>Accesos Rápidos</h2>
-            <div class="grid-3">
-                <div class="card">
-                    <h3>💻 Programación</h3>
-                    <p>Python, React y lógica de algoritmos.</p>
-                </div>
-                <div class="card">
-                    <h3>📚 Librería</h3>
-                    <p>Cuadernos técnicos y apuntes exclusivos.</p>
-                </div>
-                <div class="card">
-                    <h3>🖨️ Impresión 3D</h3>
-                    <p>Piezas personalizadas y prototipos rápidos.</p>
-                </div>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="icon">⚛</span> WOLFRAMIO <span>STORE</span>
             </div>
-        </section>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#libreria">Librería</a></li>
+                <li><a href="#3d">Impresión 3D</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn-secondary">Ingresar</button>
+                <button class="btn-primary">Comprar</button>
+            </div>
+        </div>
+    </nav>
 
+    <header id="home" class="hero">
         <div class="container">
+            <span class="badge">Nueva Temporada 2026</span>
+            <h1>Impulsando el <span class="text-gradient">Futuro Técnico</span></h1>
+            <p>Formación de élite en programación, ingeniería y fabricación digital 3D. Tu laboratorio de ideas convertido en realidad.</p>
+            <div class="hero-btns">
+                <button class="btn-primary btn-lg">Explorar Cursos</button>
+                <button class="btn-outline btn-lg">Servicios 3D</button>
+            </div>
+        </div>
+    </header>
 
-        <section style="padding: 60px 0;">
-            <h1>Catálogo de Impresión 3D</h1>
-            <div class="grid-3">
-                <div class="card">
-                    <div style="background: #334155; height: 200px; border-radius: 8px; margin-bottom: 15px;"></div>
-                    <h3>Engranaje Técnico V2</h3>
-                    <p style="color: var(--accent-secondary); font-weight: bold;">$15.00</p>
-                    <button class="btn-primary" style="width: 100%; margin-top: 10px;">Añadir al carrito</button>
+    <section id="cursos" class="section">
+        <div class="container">
+            <h2 class="section-title">Cursos Destacados</h2>
+            <div class="grid">
+                <div class="card glass-card">
+                    <div class="card-img" style="background: linear-gradient(45deg, #7c3aed, #3b82f6);"></div>
+                    <div class="card-body">
+                        <span class="tag">Programación</span>
+                        <h3>Python for Data Science</h3>
+                        <p class="price">$45.00</p>
+                        <button class="btn-card">Ver Detalles</button>
+                    </div>
                 </div>
-                
-                <div class="card" style="border: 2px dashed var(--accent-primary);">
-                    <h3>✨ Diseño Personalizado</h3>
-                    <p>¿Tienes un archivo .STL? Nosotros lo imprimimos por ti.</p>
-                    <form style="margin-top: 15px;">
-                        <input type="text" placeholder="Nombre del proyecto" style="width: 100%; padding: 10px; margin-bottom: 10px; background: #0F172A; border: 1px solid #334155; color: white;">
-                        <textarea placeholder="Cuéntanos tu idea..." style="width: 100%; padding: 10px; height: 80px; background: #0F172A; border: 1px solid #334155; color: white;"></textarea>
-                        <button type="submit" class="btn-primary" style="width: 100%;">Solicitar Cotización</button>
-                    </form>
+                <div class="card glass-card">
+                    <div class="card-img" style="background: linear-gradient(45deg, #3b82f6, #06b6d4);"></div>
+                    <div class="card-body">
+                        <span class="tag">Hardware</span>
+                        <h3>Arduino & Robótica</h3>
+                        <p class="price">$38.00</p>
+                        <button class="btn-card">Ver Detalles</button>
+                    </div>
+                </div>
+                <div class="card glass-card">
+                    <div class="card-img" style="background: linear-gradient(45deg, #ec4899, #8b5cf6);"></div>
+                    <div class="card-body">
+                        <span class="tag">Diseño</span>
+                        <h3>Modelado 3D Fusion</h3>
+                        <p class="price">$52.00</p>
+                        <button class="btn-card">Ver Detalles</button>
+                    </div>
                 </div>
             </div>
-        </section>
-    </div>
-    </div>
+        </div>
+    </section>
+
+    <section id="3d" class="section section-alt">
+        <div class="container">
+            <div class="split-layout">
+                <div class="info-3d">
+                    <h2 class="section-title left">Impresión 3D Pro</h2>
+                    <p>Realizamos tus prototipos en resina o filamento con precisión micrométrica.</p>
+                    <div class="feature-list">
+                        <div class="feat">✦ Entrega en 24hs</div>
+                        <div class="feat">✦ Materiales de Grado Aeroespacial</div>
+                        <div class="feat">✦ Optimización de Malla Gratis</div>
+                    </div>
+                    <button class="btn-primary">Pedir Cotización</button>
+                </div>
+                <div class="form-card glass-card">
+                    <h3>Solicitar Diseño</h3>
+                    <div class="input-group">
+                        <input type="text" placeholder="Nombre del proyecto">
+                        <textarea placeholder="Describe tu idea..."></textarea>
+                        <button class="btn-glow-full">Enviar Solicitud</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="showcase">
+        <div class="container">
+            <h2 class="section-title">Adaptabilidad de Interfaz</h2>
+            <div class="mockup-container">
+                <div class="mockup desktop">
+                    <div class="mockup-header"></div>
+                    <div class="mockup-content">
+                        <div class="m-hero"></div>
+                        <div class="m-grid"><span></span><span></span><span></span></div>
+                    </div>
+                    <p class="label">Desktop 1440px</p>
+                </div>
+                <div class="mockup tablet">
+                    <div class="mockup-header"></div>
+                    <div class="mockup-content">
+                        <div class="m-hero"></div>
+                        <div class="m-grid"><span></span><span></span></div>
+                    </div>
+                    <p class="label">Tablet 768px</p>
+                </div>
+                <div class="mockup mobile">
+                    <div class="mockup-header"></div>
+                    <div class="mockup-content">
+                        <div class="m-hero"></div>
+                        <div class="m-grid"><span></span></div>
+                    </div>
+                    <p class="label">Mobile 375px</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <div class="logo">ACADEMIA WOLFRAMIO</div>
+                <p>Innovación educativa y fabricación digital.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Empresa</h4>
+                <a href="#">Sobre nosotros</a>
+                <a href="#">Términos</a>
+            </div>
+            <div class="footer-links">
+                <h4>Soporte</h4>
+                <a href="#">Contacto</a>
+                <a href="#">FAQ</a>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2026 Academia Wolframio. Todos los derechos reservados.
+        </div>
+    </footer>
+
 </body>
 </html>
