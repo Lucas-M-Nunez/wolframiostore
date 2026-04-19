@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=Inter:wght@300;400;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <div class="glow-bg top-left"></div>
     <div class="glow-bg bottom-right"></div>
 
@@ -156,5 +155,34 @@
         </div>
     </footer>
 
+    <div class="operaciones">
+        <h3>Calcular</h3>
+        
+        <div>
+            <label for="">Primer numero:</label>
+            <input type="text" id="num1">
+        </div>
+
+        <div>
+            <label for="num2">Segundo numero:</label>
+            <input type="text" id="num2">
+        </div>
+
+        <p class="parrafo-calculadora">
+            Ingrese alguna operaacion:
+            Coloque:  1 - Suma
+            Coloque: 2 - resta
+            Coloque: 3 - Multiplicacion
+            Coloque: 4 - Division
+        </p>
+        <div class="operaciones">
+            <label for="">Operacion:</label>
+            <input type="text" id="operacion">
+        </div>
+        <button id="btnCalcular">Calcular</button>
+        <span id="resultado"></span>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
