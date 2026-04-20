@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo | Academia Wolframio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=Inter:wght@300;400;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="glow-bg top-left"></div>
+    <div class="glow-bg bottom-right"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="icon">⚛</span> WOLFRAMIO <span>STORE</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#impresion">Impresión 3D</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn-secondary">Ingresar</button>
+                <button id="abrirCarrito" class="btn-secondary btn-cart">Carrito <span id="contador">0</span></button>
+            </div>
+        </div>
+    </nav>
+
+    <aside id="carritoPanel" class="carrito-panel">
+        <span class="cross-panel">╳</span>
+        <div class="cart-header">
+            <div>
+                <h2>Tu carrito</h2>
+                <p class="cart-count">Agrega productos para ver el total</p>
+            </div>
+        </div>
+        <div id="carrito" class="cart-items">
+            <p class="empty-cart">Tu carrito está vacío.</p>
+        </div>
+        <div class="cart-footer">
+            <button id="comprar" class="btn-primary btn-full">Finalizar compra</button>
+        </div>
+    </aside>
+
+    <main class="section">
+        <div class="container">
+            <div class="category-filters">
+                <button class="category-btn active" data-category="todos">Todos</button>
+                <button class="category-btn" data-category="cursos">Cursos</button>
+                <button class="category-btn" data-category="impresion">Impresión 3D</button>
+                <button class="category-btn" data-category="libreria">Librería</button>
+            </div>
+
+            <section class="grid catalog-grid">
+                <div class="card glass-card" data-category="cursos">
+                    <div class="card-img" style="background: linear-gradient(45deg, #7c3aed, #3b82f6);">
+                        
+                    <div class="card-body">
+                        <span class="tag">Cursos</span>
+                        <h3>Python for Data Science</h3>
+                        <p class="price card-description">$45.00</p>
+                        <button class="btn-card botonesproductos">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="card glass-card" data-category="cursos">
+                    <div class="card-img" style="background: linear-gradient(45deg, #ec4899, #8b5cf6);">
+                        
+                    </div>
+                    <div class="card-body">
+                        <span class="tag">Cursos</span>
+                        <h3>Modelado 3D Fusion</h3>
+                        <p class="price card-description">$52.00</p>
+                        <button class="btn-card botonesproductos">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="card glass-card" data-category="cursos">
+                    <div class="card-img" style="background: linear-gradient(45deg, #10b981, #14b8a6);">
+                        <img class="img-card" src="imgs/img.jpg" alt="imagen-3d">
+                    </div>
+                    <div class="card-body">
+                        <span class="tag">Cursos</span>
+                        <h3>Arduino & Robótica</h3>
+                        <p class="price card-description">$38.00</p>
+                        <button class="btn-card botonesproductos">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="card glass-card" data-category="impresion">
+                    <div class="card-img" style="background: linear-gradient(45deg, #f97316, #facc15);">
+                        <img class="img-card" src="imgs/img.jpg" alt="imagen-3d">
+                    </div>
+                    <div class="card-body">
+                        <span class="tag">Impresión 3D</span>
+                        <h3>Miniatura científica</h3>
+                        <p class="price card-description">$22.00</p>
+                        <button class="btn-card botonesproductos">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="card glass-card" data-category="impresion">
+                    <div class="card-img" style="background: linear-gradient(45deg, #14b8a6, #0ea5e9);">
+
+                    </div>
+                    <div class="card-body">
+                        <span class="tag">Impresión 3D</span>
+                        <h3>Estuche modular</h3>
+                        <p class="price card-description">$34.00</p>
+                        <button class="btn-card botonesproductos">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="card glass-card" data-category="impresion">
+                    <div class="card-img" style="background: linear-gradient(45deg, #22c55e, #84cc16);">
+                        <img class="img-card" src="imgs/img.jpg" alt="imagen-3d">
+                    </div>
+                    <div class="card-body">
+                        <span class="tag">Impresión 3D</span>
+                        <h3>Soporte de impresora</h3>
+                        <p class="price card-description">$18.00</p>
+                        <button class="btn-card botonesproductos">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="card glass-card" data-category="libreria">
+                    <div class="card-img" style="background: linear-gradient(45deg, #8b5cf6, #ec4899);">
+                        <img class="img-card" src="imgs/img.jpg" alt="imagen-3d">
+                    </div>
+                    <div class="card-body">
+                        <span class="tag">Librería</span>
+                        <h3>Kit Maker</h3>
+                        <p class="price card-description">$29.00</p>
+                        <button class="btn-card botonesproductos">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="card glass-card" data-category="libreria">
+                    <div class="card-img" style="background: linear-gradient(45deg, #3b82f6, #0ea5e9);">
+                        <img class="img-card" src="imgs/img.jpg" alt="imagen-3d">
+                    </div>
+                    <div class="card-body">
+                        <span class="tag">Librería</span>
+                        <h3>Cuaderno técnico</h3>
+                        <p class="price card-description">$12.00</p>
+                        <button class="btn-card botonesproductos">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="card glass-card" data-category="libreria">
+                    <div class="card-img" style="background: linear-gradient(45deg, #f472b6, #fb7185);">
+                        
+                    </div>
+                    <div class="card-body">
+                        <span class="tag">Librería</span>
+                        <h3>Guía de circuitos</h3>
+                        <p class="price card-description">$16.00</p>
+                        <button class="btn-card botonesproductos">Agregar al carrito</button>
+                    </div>
+                </div>
+            </section>
+            <p id="noResults" class="empty-cart" style="display:none;">No se encontraron productos.</p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <div class="logo">ACADEMIA WOLFRAMIO</div>
+                <p>Innovación educativa y fabricación digital.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Empresa</h4>
+                <a href="#">Sobre nosotros</a>
+                <a href="#">Términos</a>
+            </div>
+            <div class="footer-links">
+                <h4>Soporte</h4>
+                <a href="#">Contacto</a>
+                <a href="#">FAQ</a>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2026 Academia Wolframio. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <script src="carrito.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

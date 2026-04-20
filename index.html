@@ -21,13 +21,30 @@
                 <li><a href="#cursos">Cursos</a></li>
                 <li><a href="#libreria">Librería</a></li>
                 <li><a href="#3d">Impresión 3D</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
             </ul>
             <div class="nav-actions">
                 <button class="btn-secondary">Ingresar</button>
                 <button class="btn-primary">Comprar</button>
+                <button id="abrirCarrito" class="btn-secondary btn-cart">Carrito <span id="contador">0</span></button>
             </div>
         </div>
     </nav>
+
+    <aside id="carritoPanel" class="carrito-panel">
+        <div class="cart-header">
+            <div>
+                <h2>Tu carrito</h2>
+                <p class="cart-count">Agrega productos para ver el total</p>
+            </div>
+        </div>
+        <div id="carrito" class="cart-items">
+            <p class="empty-cart">Tu carrito está vacío.</p>
+        </div>
+        <div class="cart-footer">
+            <button id="comprar" class="btn-primary btn-full">Finalizar compra</button>
+        </div>
+    </aside>
 
     <header id="home" class="hero">
         <div class="container">
@@ -50,8 +67,8 @@
                     <div class="card-body">
                         <span class="tag">Programación</span>
                         <h3>Python for Data Science</h3>
-                        <p class="price">$45.00</p>
-                        <button class="btn-card">Ver Detalles</button>
+                        <p class="price card-description">$45.00</p>
+                        <button class="btn-card botonesproductos">Agregar al carrito</button>
                     </div>
                 </div>
                 <div class="card glass-card">
@@ -59,8 +76,8 @@
                     <div class="card-body">
                         <span class="tag">Hardware</span>
                         <h3>Arduino & Robótica</h3>
-                        <p class="price">$38.00</p>
-                        <button class="btn-card">Ver Detalles</button>
+                        <p class="price card-description">$38.00</p>
+                        <button class="btn-card botonesproductos">Agregar al carrito</button>
                     </div>
                 </div>
                 <div class="card glass-card">
@@ -68,8 +85,8 @@
                     <div class="card-body">
                         <span class="tag">Diseño</span>
                         <h3>Modelado 3D Fusion</h3>
-                        <p class="price">$52.00</p>
-                        <button class="btn-card">Ver Detalles</button>
+                        <p class="price card-description">$52.00</p>
+                        <button class="btn-card botonesproductos">Agregar al carrito</button>
                     </div>
                 </div>
             </div>
@@ -155,34 +172,7 @@
         </div>
     </footer>
 
-    <div class="operaciones">
-        <h3>Calcular</h3>
-        
-        <div>
-            <label for="">Primer numero:</label>
-            <input type="text" id="num1">
-        </div>
-
-        <div>
-            <label for="num2">Segundo numero:</label>
-            <input type="text" id="num2">
-        </div>
-
-        <p class="parrafo-calculadora">
-            Ingrese alguna operaacion:
-            Coloque:  1 - Suma
-            Coloque: 2 - resta
-            Coloque: 3 - Multiplicacion
-            Coloque: 4 - Division
-        </p>
-        <div class="operaciones">
-            <label for="">Operacion:</label>
-            <input type="text" id="operacion">
-        </div>
-        <button id="btnCalcular">Calcular</button>
-        <span id="resultado"></span>
-    </div>
-
+    <script src="carrito.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
