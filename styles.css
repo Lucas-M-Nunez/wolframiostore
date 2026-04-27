@@ -305,6 +305,14 @@ button {
 }
 
 /* Cards Section */
+
+
+.card {
+    flex: 1 1 300px; /* ancho base de cada card */
+    max-width: 350px; /* evita que se estiren demasiado */
+}
+
+
 .section { padding: 6rem 0; }
 .section-title {
     font-size: 2.5rem;
@@ -370,9 +378,10 @@ button {
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
+    justify-content: center;
 }
 
 .glass-card {
